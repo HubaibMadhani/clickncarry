@@ -1,4 +1,5 @@
-<?php
+<html>
+    <php
 session_start();
 include 'includes/db.php';
 // Only show products that are not archived/deleted. If the DB hasn't been migrated yet
@@ -364,3 +365,6 @@ searchInput.addEventListener('keydown', function(e) {
 });
 </script>
 <?php include 'includes/footer.php'; ?>
+</html>
+
+

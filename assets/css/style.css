@@ -1,0 +1,129 @@
+
+body {
+    background: linear-gradient(135deg, #f8ffae 0%, #43cea2 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    transition: background 0.35s ease, color 0.35s ease;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 40px 0;
+}
+
+.product-card {
+    background: linear-gradient(135deg, #fff 60%, #e0c3fc 100%);
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(67, 206, 162, 0.15), 0 1.5px 6px rgba(67, 206, 162, 0.10);
+    padding: 28px 22px 22px 22px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #43cea2;
+}
+.product-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px rgba(67, 206, 162, 0.25), 0 3px 12px rgba(67, 206, 162, 0.15);
+    border-color: #e0c3fc;
+}
+.product-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 2px solid #43cea2;
+    background: #fff;
+}
+.product-card h3 {
+    color: #43cea2;
+    margin: 10px 0 6px 0;
+    font-size: 1.2em;
+}
+.product-card p {
+    color: #555;
+    font-size: 0.98em;
+    margin-bottom: 10px;
+}
+.product-card strong {
+    color: #a259c6;
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 12px;
+}
+.product-card form {
+    margin-bottom: 8px;
+}
+.product-card input[type="number"] {
+    width: 50px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: 1px solid #a259c6;
+    margin: 0 6px 0 0;
+}
+.product-card input[type="submit"] {
+    background: linear-gradient(90deg, #43cea2 0%, #a259c6 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-top: 4px;
+    box-shadow: 0 2px 8px rgba(162, 89, 198, 0.10);
+}
+.product-card input[type="submit"]:hover {
+    background: linear-gradient(90deg, #a259c6 0%, #43cea2 100%);
+    box-shadow: 0 4px 16px rgba(67, 206, 162, 0.18);
+}
+
+#search {
+    width: 320px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 2px solid #a259c6;
+    font-size: 1em;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    outline: none;
+    transition: border 0.2s;
+}
+#search:focus {
+    border-color: #43cea2;
+}
+#search-results {
+    background: #fff;
+    border: 2px solid #43cea2;
+    border-radius: 8px;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-top: 4px;
+    box-shadow: 0 2px 12px rgba(67, 206, 162, 0.10);
+    display: none;
+    position: absolute;
+    width: 320px;
+    z-index: 10;
+}
+#search-results div {
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    color: #43cea2;
+    transition: background 0.2s, color 0.2s;
+}
+#search-results div:last-child {
+    border-bottom: none;
+}
+#search-results div:hover {
+    background: #e0c3fc;
+    color: #a259c6;
+}
+.products {
+    position: relative;
+}
